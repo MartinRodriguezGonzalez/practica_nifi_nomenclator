@@ -1,4 +1,5 @@
 {
+  "externalControllerServices" : { },
   "flow" : {
     "createdTimestamp" : 1743181503347,
     "description" : "",
@@ -7,5 +8,142 @@
     "name" : "Nomenclator",
     "versionCount" : 0
   },
-  "latest" : false
+  "flowContents" : {
+    "comments" : "",
+    "componentType" : "PROCESS_GROUP",
+    "connections" : [ ],
+    "controllerServices" : [ ],
+    "defaultBackPressureDataSizeThreshold" : "1 GB",
+    "defaultBackPressureObjectThreshold" : 10000,
+    "defaultFlowFileExpiration" : "0 sec",
+    "executionEngine" : "INHERITED",
+    "externalControllerServiceReferences" : { },
+    "flowFileConcurrency" : "UNBOUNDED",
+    "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+    "funnels" : [ ],
+    "identifier" : "flow-contents-group",
+    "inputPorts" : [ ],
+    "labels" : [ ],
+    "maxConcurrentTasks" : 1,
+    "name" : "Nifi Nomenclator",
+    "outputPorts" : [ ],
+    "parameterContextName" : "Parametros-nifi-clase",
+    "position" : {
+      "x" : 0.0,
+      "y" : 0.0
+    },
+    "processGroups" : [ ],
+    "processors" : [ ],
+    "remoteProcessGroups" : [ ],
+    "scheduledState" : "ENABLED",
+    "statelessFlowTimeout" : "1 min"
+  },
+  "flowEncodingVersion" : "1.0",
+  "latest" : false,
+  "parameterContexts" : {
+    "Parametros-nifi-clase" : {
+      "componentType" : "PARAMETER_CONTEXT",
+      "inheritedParameterContexts" : [ "Kafka" ],
+      "name" : "Parametros-nifi-clase",
+      "parameters" : [ {
+        "description" : "",
+        "name" : "MONGO_SERVER",
+        "provided" : false,
+        "sensitive" : false,
+        "value" : "mongodb+srv://cluster0.q0rxb.mongodb.net"
+      }, {
+        "description" : "",
+        "name" : "MONGO_JDBC",
+        "provided" : false,
+        "sensitive" : false,
+        "value" : "/opt/nifi/compartido/jdbc/mongodb-jdbc-2.2.2-all.jar"
+      }, {
+        "description" : "",
+        "name" : "MYSQL8_JDBC",
+        "provided" : false,
+        "sensitive" : false,
+        "value" : "/opt/nifi/compartido/jdbc/mysql-connector-j-8.4.0.jar"
+      }, {
+        "description" : "",
+        "name" : "MONGO_PASSWORD",
+        "provided" : false,
+        "sensitive" : true
+      }, {
+        "description" : "",
+        "name" : "MYSQL_CLASSNAME",
+        "provided" : false,
+        "sensitive" : false,
+        "value" : "com.mysql.cj.jdbc.Driver"
+      }, {
+        "description" : "",
+        "name" : "MYSQL_SERVER",
+        "provided" : false,
+        "sensitive" : false,
+        "value" : "jdbc:mysql://10.133.29.77:9906/nifi"
+      }, {
+        "description" : "",
+        "name" : "MYSQL_USER",
+        "provided" : false,
+        "sensitive" : false,
+        "value" : "nifi"
+      }, {
+        "description" : "",
+        "name" : "MONGO_USER",
+        "provided" : false,
+        "sensitive" : false,
+        "value" : "martinrodriguez"
+      }, {
+        "description" : "",
+        "name" : "MYSQL_PASSWORD",
+        "provided" : false,
+        "sensitive" : true
+      }, {
+        "description" : "",
+        "name" : "MYSQL9_JDBC",
+        "provided" : false,
+        "sensitive" : false,
+        "value" : "/opt/nifi/compartido/jdbc/mysql-connector-j-9.2.0.jar"
+      } ]
+    },
+    "Kafka" : {
+      "componentType" : "PARAMETER_CONTEXT",
+      "inheritedParameterContexts" : [ ],
+      "name" : "Kafka",
+      "parameters" : [ {
+        "description" : "",
+        "name" : "KAFKA_SERVER",
+        "provided" : false,
+        "sensitive" : false,
+        "value" : "doce.kafka.jfsanchez.es:9092"
+      }, {
+        "description" : "",
+        "name" : "topic",
+        "provided" : false,
+        "sensitive" : false,
+        "value" : "tipicol"
+      }, {
+        "description" : "",
+        "name" : "REDIS_PASSWORD",
+        "provided" : false,
+        "sensitive" : true
+      }, {
+        "description" : "",
+        "name" : "REDIS_CONEXION_PASSWORD",
+        "provided" : false,
+        "sensitive" : true
+      }, {
+        "description" : "",
+        "name" : "REDIS_USER",
+        "provided" : false,
+        "sensitive" : false,
+        "value" : "usuarioredis"
+      } ]
+    }
+  },
+  "parameterProviders" : { },
+  "snapshotMetadata" : {
+    "author" : "admin",
+    "flowIdentifier" : "Nomenclator",
+    "timestamp" : 0
+  }
 }
